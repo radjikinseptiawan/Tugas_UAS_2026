@@ -32,7 +32,7 @@
                 return;
             }
 
-            $publicPages = ['home','login',''];
+            $publicPages = ['home','login','','process_update'];
 
             if(!in_array($this->page,$publicPages)){
                 http_response_code(404);

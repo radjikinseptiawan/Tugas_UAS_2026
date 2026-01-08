@@ -7,7 +7,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     if($username == 'admin' && $password == '123'){
         $_SESSION['admin'] = True;
         $_SESSION['username'] = $username;
-        header("Location: /companyProfileCMS/edit");
+        header("Location: /edit");
         exit;
     }
 }

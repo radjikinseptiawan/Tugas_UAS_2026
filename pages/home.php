@@ -4,7 +4,6 @@ include("./config/kernel.php");
 $data = new DataUsed();
 $results = $data->select();
 
-// Proteksi jika database kosong agar tidak error
 if(!$results){
     $results = [
         'company_name' => 'NamaPerusahaan',

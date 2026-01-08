@@ -1,7 +1,8 @@
 RewriteEngine On
 
-RewriteBase /companyProfileCMS/
+RewriteBase /
 
-RewriteCond %[REQUEST_FILENAME]% !-f
-RewriteCond %[REQUEST_FILENAME]% !-d
-RewriteRule ^ index.php [L] 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^ index.php [L]

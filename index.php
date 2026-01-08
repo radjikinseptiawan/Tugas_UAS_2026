@@ -3,7 +3,7 @@
     session_start();
     class RoutingConfig{
         private $url;
-        private $basePath = '/companyProfileCMS';
+        private $basePath = '';
         private $path;
         private $page = '';
         
